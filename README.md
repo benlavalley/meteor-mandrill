@@ -1,3 +1,7 @@
+This package is a fork from [Wylio/meteor-mandrill](https://github.com/Wylio/meteor-mandrill) patched with [StorytellerCZ](https://github.com/StorytellerCZ)'s [PR#25](https://github.com/Wylio/meteor-mandrill/pull/25).
+
+--
+
 # Mandrill for Meteor [![Build Status](https://travis-ci.org/Wylio/meteor-mandrill.svg)](https://travis-ci.org/Wylio/meteor-mandrill/) [![Percentage of issues still open](http://isitmaintained.com/badge/open/Wylio/meteor-mandrill.svg)](http://isitmaintained.com/project/Wylio/meteor-mandrill "Percentage of issues still open") ![GitHub license](https://img.shields.io/:license-mit-blue.svg?style=flat)
 
 
@@ -32,6 +36,7 @@ Mandrill.config({
   port: 587,  // defaults to 465 for SMTP over TLS
   host: 'smtps.mandrillapp.com',  // the SMTP host
   // baseUrl: 'https://mandrillapp.com/api/1.0/'  // update this in case Mandrill changes its API endpoint URL or version
+  // protocol: "smtps" // by default will put smtp unless port 465 (in that case smtps), you can override it here
 });
 
 // Meteor method code
